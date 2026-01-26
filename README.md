@@ -1,6 +1,13 @@
-# R2Gen
+# IHO
 
-This is the implementation of [Exploring Intrinsic Hierarchical Organization for Medical Diagnosis](https://arxiv.org/pdf/2010.16056.pdf) at ISBI.
+<img src= "pic/framework.png" width="120%">
+
+This is the implementation of Exploring Intrinsic Hierarchical Organization for Medical Diagnosis at ISBI.
+
+
+
+
+We propose a structured knowledge-driven framework that explores intrinsic hierarchical organization to represent high-order dependencies within and across biological scales for interpretable diagnosis. Our approach is motivated by the inherent hierarchical structure of biological systems, where complex physiological functions arise from interactions across multiple organizational levels, including intra-level interactions and inter-level relationships. By integrating them into a unified hypergraph representation, we derive interpretable features that preserve structural dependencies across scales and offer a natural scaffold to integrate heterogeneous medical data in a unified, structured way. Each layer first models group-wise interactions through the hyperedges within the hypergraph, and then fuses information along the bidirectional path formed by the connections between different scales throughout the entire hierarchical structure. In this way, local and hierarchical information can interweave and complement each other. Probabilistic inference over the hypergraph space allows us to uncover latent hierarchical patterns that are predictive of disease states while remaining aligned with biological plausibility. Experimental results on medical report generation and medicalVQA tasks demonstrate improved diagnostic accuracy, suggesting that modeling biological data through hierarchy-based structures offers a principled path for medical diagnosis. 
 
 
 ## Requirements
@@ -34,3 +41,19 @@ Follow [CheXpert](https://github.com/MIT-LCP/mimic-cxr/tree/master/txt/chexpert)
 ## Visualization
 
 Run `python main_plot.py` to visualize the attention maps on the MIMIC-CXR data.
+
+
+## Result
+
+<img src= "pic/IU.jpg" width="120%">
+<img src= "pic/result.jpg" width="120%">
+
+
+## Acknowledgements
+The evaluation code (cmc & mAP) is partially borrowed from the [MARS-evaluation](https://github.com/liangzheng06/MARS-evaluation) repository. 
+
+The implementation relies on [R2Gen](https://github.com/cuhksz-nlp/R2Gen). We thank the original authors for their work and open source code.
+
+## Contact
+Should you have any question, please contact chengzhicao88@gmail.com.
+
