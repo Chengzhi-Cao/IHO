@@ -1,4 +1,4 @@
-# IHO
+# Exploring Intrinsic Hierarchical Organization for Medical Diagnosis
 
 <img src= "pic/framework.png" width="120%">
 
